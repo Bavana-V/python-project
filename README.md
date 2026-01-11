@@ -5,7 +5,7 @@ data = pd.read_csv("students.csv")
 data["Average"] = (data["Maths"] + data["Science"] + data["English"] + data["Computer"]) / 4
 
 highest = data["Average"].max()
-lowest = data["Average"].min.()
+lowest = data["Average"].min()
 
 def performance(avg):
     if avg >= 90:
@@ -25,5 +25,5 @@ print("Student Performance Details:\n")
 print(data[["Student_Name","Average","Performance"]])
 
 print("\nSummary:")
-print(:Highest Average:",highest)
+print("Highest Average:",highest)
 print("Lowest Average:",lowest)
